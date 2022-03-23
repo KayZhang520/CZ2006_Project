@@ -19,7 +19,7 @@ import Review from "./components/Review.js";
 import logo from "./media/logo.png";
 import University from "./components/University.js";
 
-function App() {
+function Dump() {
   const [page, setPage] = useState("home");
   return (
     <Container w={"1000px"} m={0}>
@@ -71,4 +71,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dump;
