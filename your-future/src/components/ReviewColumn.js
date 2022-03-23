@@ -1,15 +1,22 @@
-import { Flex } from "@chakra-ui/react";
+import getReviews from "../getReviews";
 import Review from "./Review";
 
-function ReviewColumn(reviews) {
-  console.log("review column redered.");
-  return (
-    <Flex>
-      {reviews.map((username, rating, comment) => (
-        <Review username={username} rating={rating} comment={comment}></Review>
-      ))}
-    </Flex>
-  );
+function ReviewColumn(props) {
+  const content = posts.map((post) => (
+    <div key={post.id}>
+      <Review
+        username={post.username}
+        comment={post.comment}
+        rating={post.rating}
+      ></Review>
+    </div>
+  ));
+  return <div>{content}</div>;
 }
+
+const posts = [
+  { id: 1, username: "John", rating: 5, comment: "good school" },
+  { id: 2, username: "Brian", rating: 4, comment: "bad school" },
+];
 
 export default ReviewColumn;

@@ -14,7 +14,13 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import { Slider } from "@mui/material";
+import {
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+  SliderMark,
+} from "@chakra-ui/react";
 
 function PreferenceForm() {
   return (
@@ -40,50 +46,51 @@ function PreferenceForm() {
         bg="gray.50"
         className="abc"
       >
-        <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full ">
+        <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
           <GridItem colSpan={2}>
             <FormControl></FormControl>
             <FormLabel>Teaching</FormLabel>
-            <Slider
-              aria-label="Always visible"
-              defaultValue={80}
-              step={10}
-              valueLabelDisplay="on"
-            />
+            <Slider aria-label="slider-ex-1" defaultValue={30}>
+              <SliderTrack>
+                <SliderFilledTrack />
+              </SliderTrack>
+              <SliderThumb />
+            </Slider>
           </GridItem>
           <GridItem colSpan={2}>
             <FormControl></FormControl>
             <FormLabel>Legacy</FormLabel>
-            <Slider
-              aria-label="Always visible"
-              defaultValue={80}
-              step={10}
-              valueLabelDisplay="on"
-            />
+            <Slider aria-label="slider-ex-1" defaultValue={30}>
+              <SliderTrack>
+                <SliderFilledTrack />
+              </SliderTrack>
+              <SliderThumb />
+            </Slider>
           </GridItem>
           <GridItem colSpan={2}>
             <FormControl></FormControl>
             <FormLabel>Tuition Cost</FormLabel>
-            <Slider
-              aria-label="Always visible"
-              defaultValue={80}
-              step={10}
-              valueLabelDisplay="on"
-            />
+            <Slider aria-label="slider-ex-1" defaultValue={30}>
+              <SliderTrack>
+                <SliderFilledTrack />
+              </SliderTrack>
+              <SliderThumb />
+            </Slider>
           </GridItem>
           <GridItem colSpan={2}>
             <FormControl></FormControl>
             <FormLabel>Accomodation</FormLabel>
-            <Slider
-              aria-label="Always visible"
-              defaultValue={80}
-              step={10}
-              valueLabelDisplay="on"
-            />
+            <Slider aria-label="slider-ex-1" defaultValue={30}>
+              <SliderTrack>
+                <SliderFilledTrack />
+              </SliderTrack>
+              <SliderThumb />
+            </Slider>
           </GridItem>
-          <GridItem>
+          <GridItem colSpan={1}></GridItem>
+          <GridItem colSpan={1}>
             <Button size="lg" w="full">
-              Submit
+              Continue
             </Button>
           </GridItem>
         </SimpleGrid>

@@ -60,9 +60,10 @@ function RequirementsForm() {
               <option value="de">Germany</option>
             </Select>
           </GridItem>
-          <GridItem>
+          <GridItem colSpan={1}></GridItem>
+          <GridItem colSpan={1}>
             <Button size="lg" w="full">
-              Submit
+              Continue
             </Button>
           </GridItem>
         </SimpleGrid>
