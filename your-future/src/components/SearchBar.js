@@ -15,7 +15,7 @@ import { MdArrowDropDown } from "react-icons/md";
 
 export default function SearchBar() {
   return (
-    <Container>
+    <Container pb="3rem">
       <HStack mb={2}>
         <Input defaultValue={"testing"}></Input>
         <Button>

@@ -20,15 +20,14 @@ import logo from "./media/logo.png";
 import University from "./components/University.js";
 import Chart from "./components/Chart.js";
 import NavBar from "./components/NavBar.js";
-import {Outlet} from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [page, setPage] = useState("home");
   return (
-    <Container mw={"50%"} style={{border:"1px solid red"}}>
-     <NavBar></NavBar>
-     <Outlet/>
-      
+    <Container maxW={"100%"}>
+      <NavBar></NavBar>
+      <Outlet />
     </Container>
   );
 }
