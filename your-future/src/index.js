@@ -3,10 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <ChakraProvider>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+      </Routes>
+    </Router>
   </ChakraProvider>,
   document.getElementById("root")
 );

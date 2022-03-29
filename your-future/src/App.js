@@ -18,6 +18,7 @@ import ReviewColumn from "./components/ReviewColumn.js";
 import Review from "./components/Review.js";
 import logo from "./media/logo.png";
 import University from "./components/University.js";
+import Chart from "./components/Chart.js";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -66,7 +67,15 @@ function App() {
       ></Review>
       {page == "reviews" && <ReviewColumn></ReviewColumn>}
       <UserForm step={1}></UserForm>
-      <University name={"NTU"} rating={5} location={"Singapore"} imgSrc={"https://imageio.forbes.com/specials-images/imageserve/1209892117/Dunster-House/960x0.jpg?fit=bounds&format=jpg&width=960"}><University/>
+      <University
+        name={"NTU"}
+        rating={5}
+        location={"Singapore"}
+        imgSrc={
+          "https://imageio.forbes.com/specials-images/imageserve/1209892117/Dunster-House/960x0.jpg?fit=bounds&format=jpg&width=960"
+        }
+      ></University>
+      <Chart></Chart>
     </Container>
   );
 }
