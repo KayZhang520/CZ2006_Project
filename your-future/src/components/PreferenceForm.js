@@ -22,7 +22,7 @@ import {
   SliderMark,
 } from "@chakra-ui/react";
 
-function PreferenceForm() {
+function PreferenceForm(props) {
   return (
     <VStack
       w="full"
@@ -89,7 +89,7 @@ function PreferenceForm() {
           </GridItem>
           <GridItem colSpan={1}></GridItem>
           <GridItem colSpan={1}>
-            <Button size="lg" w="full">
+            <Button size="lg" w="full" onClick={props.handler(4)}>
               Continue
             </Button>
           </GridItem>

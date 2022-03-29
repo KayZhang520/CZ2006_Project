@@ -16,7 +16,7 @@ import {
 
 import { Slider } from "@mui/material";
 
-function PreferenceForm() {
+function PreferenceForm(props) {
   return (
     <VStack
       w="full"
@@ -55,7 +55,7 @@ function PreferenceForm() {
             <Input></Input>
           </GridItem>
           <GridItem>
-            <Button size="lg" w="full">
+            <Button size="lg" w="full" onClick={props.handler(3)}>
               Submit
             </Button>
           </GridItem>

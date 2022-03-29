@@ -8,6 +8,8 @@ import Everything from "./routes/Everything";
 import LoginForm from "./components/LoginForm";
 import SignUpForm from "./components/SignUpForm";
 import Home from "./routes/Home";
+import TestRoute from "./routes/TestRoute";
+import RecommendationTool from "./routes/RecommendationTool";
 
 ReactDOM.render(
   <ChakraProvider>
@@ -15,9 +17,13 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}></Route>
-          <Route path="/recommendation" element={<Everything />}></Route>
+          <Route
+            path="/recommendation"
+            element={<RecommendationTool />}
+          ></Route>
           <Route path="/login" element={<LoginForm />}></Route>
           <Route path="/signup" element={<SignUpForm />}></Route>
+          <Route path="/test" element={<TestRoute />}></Route>
         </Route>
       </Routes>
     </Router>

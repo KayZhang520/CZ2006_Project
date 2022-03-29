@@ -12,7 +12,6 @@ import {
   Box,
 } from "@chakra-ui/react";
 import SearchBar from "./components/SearchBar.js";
-import UserForm from "./components/UserForm.js";
 import { useState } from "react";
 import ReviewColumn from "./components/ReviewColumn.js";
 import Review from "./components/Review.js";

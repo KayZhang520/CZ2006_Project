@@ -15,6 +15,9 @@ function NavBar() {
         <Button>
           <Link to="reviews">View Reviews</Link>
         </Button>
+        <Button>
+          <Link to="test">test</Link>
+        </Button>
       </HStack>
       <Spacer></Spacer>
       <HStack>
